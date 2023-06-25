@@ -23,6 +23,7 @@ ImportForestCrop <- function(rep=getwd()){
   Nbre <- dim(plac)[1]
   Surf = Forets$SurfEchan
 
-  out <- list(plac,perim,Nbre,Surf)
+  out <- list(plac,perim,Nbre,Surf, gfPla,arbres)
+  names(out) <- c("plac","perim","Nbre","Surf", "gfPla","arbres")
   return(out)
 }
